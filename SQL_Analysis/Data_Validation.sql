@@ -1,0 +1,27 @@
+DROP TABLE IF EXISTS retail_inventory;
+CREATE TABLE retail_inventory (
+    date DATE,
+    store_id VARCHAR(20),
+    product_id VARCHAR(20),
+    category VARCHAR(50),
+    region VARCHAR(50),
+    inventory_level INT,
+    units_sold INT,
+    units_ordered INT,
+    demand_forecast DECIMAL(10,2),
+    price DECIMAL(10,2),
+    discount INT,
+    weather_condition VARCHAR(30),
+    holiday_promotion INT,
+    competitor_pricing DECIMAL(10,2),
+    seasonality VARCHAR(30),
+    final_price DECIMAL(10,2),
+    revenue DECIMAL(12,2),
+    remaining_inventory INT,
+    inventory_utilization DECIMAL(10,2),
+    demand_gap DECIMAL(10,2),
+    fulfillment_rate DECIMAL(10,2),
+    stockout VARCHAR(10),
+    overstock VARCHAR(10),
+    overstock_flag VARCHAR(10)
+);
